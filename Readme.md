@@ -25,3 +25,28 @@ and dynamic parts and tracking changes.
 ```
 
 2) make a template folder and build templates that use application name. (example)[https://github.com/phoenixframework/phoenix/blob/master/installer/templates/phx_web/views/page_view.ex]
+
+```
+  files for: "hook everything up except the front-end ui": [#1](https://github.com/MichaelDimmitt/live_view_app/pull/1)
+
+  README.md
+
+  // essential files to change for hooking up live view.
+  mix.exs
+  config/config.exs
+  assets/js/app.js
+  assets/package.json
+
+  // essential files for a live view change.
+  
+  lib/live_view_app_web/router.ex 
+  lib/live_view_app_web/templates/layout/app.html.eex 
+
+  // files for thermostat and weather live view.
+  lib/live_view_app_web/live/thermostat_live.ex 
+  lib/live_view_app_web/live/weather_live.ex 
+
+  assets/css/app.css 
+  assets/css/live_view.css 
+  assets/css/thermostat.css 
+```
